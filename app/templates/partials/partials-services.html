@@ -1,0 +1,86 @@
+<div class="w-full">
+
+  <!-- TITLE -->
+  <div class="py-16 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
+      Our <span class="text-blue-600">Services</span>
+    </h1>
+    <div class="w-20 h-1.5 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+  </div>
+
+  <!-- ===== SERVICES GRID SECTION ===== -->
+  <div class="max-w-7xl mx-auto px-6 pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- CARD 1 -->
+      <div class="group bg-white p-8 rounded-4xl border border-gray-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-blue-200 transition-all duration-500 flex flex-col items-center text-center transform hover:-translate-y-3">
+        <div class="mb-6 overflow-hidden rounded-2xl bg-gray-50">
+          <img src="/static/image-2/services 1st div img.png" 
+               alt="enhance workflow" 
+               class="w-full h-auto group-hover:scale-110 transition-transform duration-500" />
+        </div>
+        <h4 class="text-xl font-bold text-gray-800 mb-4 group-hover:text-blue-600 transition-colors">
+          Designed to enhance your workflow
+        </h4>
+        <p class="text-gray-500 leading-relaxed text-sm">
+          You will always discover the perfect solution tailored to your requirements. 
+          From our basic plans to fully customized services that embody your brand's essence.
+        </p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="group bg-white p-8 rounded-4xl border border-gray-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-blue-200 transition-all duration-500 flex flex-col items-center text-center transform hover:-translate-y-3">
+        <div class="mb-6 overflow-hidden rounded-2xl bg-gray-50">
+          <img src="/static/image-2/services 2nd div img.png" 
+               alt="Customizable" 
+               class="w-full h-auto group-hover:scale-110 transition-transform duration-500" />
+        </div>
+        <h4 class="text-xl font-bold text-gray-800 mb-4 group-hover:text-blue-600 transition-colors">
+          Customizable from start to finish
+        </h4>
+        <p class="text-gray-500 leading-relaxed text-sm">
+          Feel free to customize your experience as you wish. 
+          No need for technical skills or complex coding. 
+          Our user-friendly platform will guide you.
+        </p>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="group bg-white p-8 rounded-4xl border border-gray-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-blue-200 transition-all duration-500 flex flex-col items-center text-center transform hover:-translate-y-3">
+        <div class="mb-6 overflow-hidden rounded-2xl bg-gray-50">
+          <img src="/static/image-2/services 3rd div img.png" 
+               alt="insights" 
+               class="w-full h-auto group-hover:scale-110 transition-transform duration-500" />
+        </div>
+        <h4 class="text-xl font-bold text-gray-800 mb-4 group-hover:text-blue-600 transition-colors">
+          All insights at your fingertips
+        </h4>
+        <p class="text-gray-500 leading-relaxed text-sm">
+          Never miss a detail again and receive all the reports you need, anytime and anywhere. 
+          Analyze them effortlessly and scale your business.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== PARTNERS SECTION ===== -->
+  <section class="w-full py-20 flex flex-col items-center text-center px-6">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+      Partners <span class="text-purple-600">and references</span>
+    </h2>
+    <p class="text-gray-500 max-w-2xl mb-10">
+      Join the hundreds of successful companies that trust Flowem to simplify their digital landscape.
+    </p>
+
+    <!-- HTMX LINK AS BUTTON -->
+    <a href="/case-studies"
+       class="inline-flex items-center gap-2 px-8 py-4 bg-black text-white rounded-full font-bold shadow-xl hover:bg-blue-600 hover:scale-105 transition-all active:scale-95 cursor-pointer"
+       hx-get="/case-studies"
+       hx-target="#container"
+       hx-push-url="true">
+       See our case studies <span class="text-xl">→</span>
+    </a>
+  </section>
+
+</div>

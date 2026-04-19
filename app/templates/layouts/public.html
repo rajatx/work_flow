@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowem | public</title>
+    <link rel="stylesheet" href="/static/css/dist/output.css">
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body>
+    {% include 'components/header.html' %}
+    <div class="content">
+    {% include 'components/sidebar.html' %}
+
+    <main id="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+    </div>
+    {% include 'components/footer.html' %}
+
+<script src="/static/javaScript/script.js"></script>
+</body>
+</html>

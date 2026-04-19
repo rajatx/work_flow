@@ -1,0 +1,80 @@
+<!-- PublicHeader.html -->
+<header class="fixed top-0 left-0 w-full h-16 z-1000 flex justify-between items-center px-4 box-border shadow-md shadow-blue-500/50 bg-[rgba(246,246,246,0.5)] backdrop-blur-sm">
+
+  <!-- LEFT -->
+  <div class="flex items-center gap-3 shrink-0">
+    <button class="text-xl shrink-0 bg-transparent border-none cursor-pointer" onclick="openSidebar()">
+      <img src="/static/icon/menu.png" alt="manu-icon" class="h-4.5 w-4.5 sm:h-6 sm:w-6">
+    </button>
+    <img src="/static/image/TM_Flowem.png" alt="logo" class="h-auto w-23 sm:w-26 md:w-30 shrink-0 object-contain" />
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="nav" class="flex-1 flex items-center justify-center min-w-0 mx-5">
+
+  <div id="nav-links" class="flex items-center gap-2 sm:gap-5 max-w-full">
+    <a class="whitespace-nowrap text-blue-600 hover:text-purple-600 transition cursor-pointer" 
+    hx-get="/" hx-target="#container" hx-push-url="true">Home</a>
+
+     <!-- Conditional Dashboard Link for Authenticated Users -->
+    {% if user %}
+      <a class="nav-link whitespace-nowrap text-purple-600 font-bold hover:text-blue-600 transition cursor-pointer" 
+         href="/dashboard" hx-get="/dashboard" hx-target="#container" hx-push-url="true">Dashboard</a>
+    {% endif %}
+
+    <a class="whitespace-nowrap text-blue-600 hover:text-purple-600 transition cursor-pointer" 
+    hx-get="/about" hx-target="#container" hx-push-url="true">About</a>
+    <a class="whitespace-nowrap text-blue-600 hover:text-purple-600 transition cursor-pointer" 
+    hx-get="/contact" hx-target="#container" hx-push-url="true">Contact</a>
+    <a class="whitespace-nowrap text-blue-600 hover:text-purple-600 transition cursor-pointer" 
+    hx-get="/appointment" hx-target="#container" hx-push-url="true">Appointment</a>
+    <a class="whitespace-nowrap text-blue-600 hover:text-purple-600 transition cursor-pointer" 
+    hx-get="/blog" hx-target="#container" hx-push-url="true">Blog</a>
+    <a class="whitespace-nowrap text-blue-600 hover:text-purple-600 transition cursor-pointer" 
+    hx-get="/services" hx-target="#container" hx-push-url="true">Services</a>
+  <!-- MORE BUTTON -->
+    <div id="more-container" class="relative hidden shrink-0">
+      <button id="more-btn" class="text-xl px-1 cursor-pointer">⋯</button>
+
+      <!-- DROPDOWN -->
+      <div id="more-menu"
+           class="hidden absolute right-0 top-full w-40 bg-white shadow-xl rounded-lg p-2 z-2000 border border-gray-200">
+      </div>
+    </div>
+  
+  </div>
+
+  </nav>
+
+  <!-- RIGHT -->
+  <div class="flex items-center gap-3.5 shrink-0">
+
+    {% if user %}
+
+    <div class="flex items-center gap-4">
+      <div class="w-10 h-10 rounded-full border-2 border-purple-500 overflow-hidden cursor-pointer hover:scale-105 transition-transform"
+           hx-get="/profile" hx-target="#container" hx-push-url="true">
+           <img src="{{ user.profile_url if user.profile_url else '/static/image/profile_image.jpg' }}" 
+                alt="Profile-Picture" class="w-full h-full object-cover" />
+      </div>
+
+      <button class="p-2 hover:bg-red-50 rounded-full transition-colors group cursor-pointer"
+              hx-get="/logout" 
+              hx-target="body" 
+              hx-push-url="/login" 
+              hx-confirm="Are you sure you want to logout?">
+              <img src="/static/icon/Logout.svg" alt="logout" class="w-6 h-6 group-hover:opacity-100 group-hover:invert-[0.2] transition-opacity" />
+      </button>
+    </div>
+    {% else %}
+
+    <div class="flex gap-2.5 max-[450px]:gap-1 max-[450px]:flex-col max-[450px]:items-center">
+    <button class="px-4 py-1 max-[450px]:px-1.5 max-[450px]:py-0.5 max-[450px]:leading-tight max-[450px]:text-sm rounded-full border border-blue-700 text-purple-600 cursor-pointer" 
+    hx-get="/login" hx-target="#container" hx-push-url="true">Login</button>
+    <button class="px-4 py-1 max-[450px]:px-1.5 max-[450px]:py-0.5 max-[450px]:leading-tight max-[450px]:text-sm rounded-full bg-purple-600 text-white border border-purple-600 cursor-pointer" 
+    hx-get="/signup" hx-target="#container" hx-push-url="true">Signup</button>
+    </div>
+    {% endif %}
+  </div>
+
+</header>

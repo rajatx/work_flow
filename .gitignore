@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Node/Tailwind
+node_modules/
+package-lock.json
+dist/
+
+# Others
+.DS_Store

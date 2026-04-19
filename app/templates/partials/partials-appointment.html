@@ -1,0 +1,131 @@
+<div class="max-w-7xl mx-auto px-4 py-10 sm:px-6 lg:px-8">
+    
+    <!-- ===== BREADCRUMB ===== -->
+    <nav class="mb-8 flex items-center space-x-2 text-sm font-medium">
+        <span class="text-blue-600">Date & time</span>
+        <span class="text-gray-400">/</span>
+        <span class="text-gray-500">Details</span>
+        <span class="text-gray-400">/</span>
+        <span class="text-gray-500">Booked</span>
+    </nav>
+
+    <div class="flex flex-col lg:flex-row gap-12">
+
+        <!-- ================= LEFT (CALENDAR) ================= -->
+        <div class="flex-[1.5] w-full">
+            <h1 class="text-3xl font-extrabold text-gray-900 mb-6">Select a <span class="text-purple-600">date & time</span></h1>
+
+            <div class="bg-white border border-gray-200 rounded-3xl shadow-sm p-6 sm:p-8">
+                
+                <!-- CALENDAR HEADER -->
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-xl font-bold text-gray-800 tracking-tight">December 2025</h2>
+                    <div class="flex space-x-2">
+                        <button class="p-2 hover:bg-gray-100 rounded-full transition-colors border border-gray-100">
+                            <svg xmlns="http://w3.org" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                        </button>
+                        <button class="p-2 hover:bg-gray-100 rounded-full transition-colors border border-gray-100">
+                            <svg xmlns="http://w3.org" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CALENDAR GRID -->
+                <div class="grid grid-cols-7 gap-2 sm:gap-4 text-center">
+                    <!-- Day Names -->
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-widest pb-4">Sun</div>
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-widest pb-4">Mon</div>
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-widest pb-4">Tue</div>
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-widest pb-4">Wed</div>
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-widest pb-4">Thu</div>
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-widest pb-4">Fri</div>
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-widest pb-4">Sat</div>
+
+                    <!-- Days (Static Demo) -->
+                    <!-- loop dynamic logic pore htmx diye kora jabe -->
+                    <div class="py-3 text-gray-300">30</div>
+                    <div class="py-3 cursor-pointer hover:bg-blue-50 rounded-xl transition-all">1</div>
+                    <div class="py-3 cursor-pointer hover:bg-blue-50 rounded-xl transition-all">2</div>
+                    <div class="py-3 cursor-pointer hover:bg-blue-50 rounded-xl transition-all font-semibold">3</div>
+                    <div class="py-3 cursor-pointer hover:bg-blue-50 rounded-xl transition-all">4</div>
+                    <div class="py-3 cursor-pointer hover:bg-blue-50 rounded-xl transition-all">5</div>
+                    <div class="py-3 cursor-pointer hover:bg-blue-50 rounded-xl transition-all">6</div>
+                    
+                    <!-- active day example -->
+                    <div class="py-3 cursor-pointer bg-blue-600 text-white font-bold rounded-xl shadow-lg shadow-blue-200">28</div>
+                    <div class="py-3 cursor-pointer hover:bg-blue-50 rounded-xl transition-all">29</div>
+                    <div class="py-3 cursor-pointer hover:bg-blue-50 rounded-xl transition-all">30</div>
+                    <div class="py-3 cursor-pointer hover:bg-blue-50 rounded-xl transition-all">31</div>
+                </div>
+            </div>
+
+            <!-- TIMEZONE -->
+            <div class="mt-8 flex items-center p-4 bg-gray-50 rounded-2xl border border-gray-100">
+                <label class="text-sm font-semibold text-gray-500 mr-4">🌐 Timezone:</label>
+                <select class="bg-transparent border-none focus:ring-0 text-sm font-bold text-gray-800 cursor-pointer">
+                    <option>Asia/Kolkata (GMT +5:30)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- ================= RIGHT (DETAILS) ================= -->
+        <div class="flex-1 w-full bg-white border border-gray-200 rounded-3xl p-8 shadow-sm h-fit sticky top-24">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">Personal Meeting</h2>
+            
+            <div class="flex flex-col space-y-3 mb-6">
+                <div class="flex items-center text-gray-500 text-sm font-medium">
+                    <span class="mr-2 text-lg">📹</span> Online Meeting (Zoom/Meet)
+                </div>
+                <div class="flex items-center text-gray-500 text-sm font-medium">
+                    <span class="mr-2 text-lg">⏱</span> 30 minutes duration
+                </div>
+            </div>
+
+            <hr class="border-gray-100 mb-6" />
+
+            <!-- OPERATOR INFO -->
+            <div class="mb-8">
+                <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-[2px] mb-3">Operator</h4>
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600">F</div>
+                    <div>
+                        <p class="font-bold text-gray-800">Flowem Team</p>
+                        <p class="text-xs text-gray-500">rajat@flowem.com</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600">
+                      <img src="/static/icon/phone.svg" alt="phone" class="w-4 h-4" />
+                    </div>
+                    <p class="text-sm text-gray-600 font-medium group-hover:text-blue-600 transition-colors">+91 98318 16398</p>
+                </div>  
+            </div>
+
+            <h4 class="text-sm font-bold text-gray-800 mb-4">Select a time</h4>
+
+            <!-- TIME SLOTS (HTMX) -->
+            <div class="grid grid-cols-2 gap-3 mb-6">
+                <button hx-get="/select-time?time=14:30" hx-target="#selected-time"
+                    class="py-3 px-4 rounded-xl border border-gray-200 text-sm font-bold hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all active:scale-95">
+                    2:30 pm
+                </button>
+                <button hx-get="/select-time?time=15:00" hx-target="#selected-time"
+                    class="py-3 px-4 rounded-xl border border-gray-200 text-sm font-bold hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all active:scale-95">
+                    3:00 pm
+                </button>
+            </div>
+
+            <!-- SELECTED TIME AREA -->
+            <div id="selected-time" class="mb-6 empty:hidden p-4 bg-blue-50 rounded-xl text-blue-700 text-sm font-bold text-center border border-blue-100 animate-pulse">
+                <!-- HTMX data will load here -->
+            </div>
+
+            <button hx-post="/book-appointment" hx-target="#container"
+                class="w-full py-4 bg-gray-900 text-white font-bold rounded-2xl shadow-xl hover:bg-blue-600 transition-all active:scale-[0.98]">
+                Confirm Appointment
+            </button>
+        </div>
+
+    </div>
+</div>

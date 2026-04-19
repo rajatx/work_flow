@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@theme{
+    --font-serif: 'PT Serif', serif;
+}
+
+body{
+    @apply font-serif m-0 p-0 bg-[#e0e0e0];
+}   
+
+.content{
+    @apply pt-20;
+}
+
+
+/* Blob Styles for home page */
+/* Blob Animation */
+@keyframes blobMove {
+    0% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.05) rotate(5deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+.animate-blob {
+    animation: blobMove 8s ease-in-out infinite;
+}
+
+/* CTA Blob Animation */
+@keyframes ctaBlobMove {
+    0% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.01) rotate(5deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes ctaBlobMove {
+    0% { transform: scale(1.01) rotate(0deg); }
+    50% { transform: scale(1) rotate(-5deg); }
+    100% { transform: scale(1.01) rotate(0deg); }
+}
+#cta-blob-1 {
+    animation: ctaBlobMove 10s ease-in-out infinite;
+}
+#cta-blob-2 {
+    animation: ctaBlobMove 14s ease-in-out infinite;
+}
+
+
+/* Wave Animation for contact page background */
+/* animation */
+@keyframes waveMove {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* different speed for each line */
+.line-1 { animation: waveMove 6s infinite ease-in-out; }
+.line-2 { animation: waveMove 8s infinite ease-in-out; }
+.line-3 { animation: waveMove 10s infinite ease-in-out; }
+.line-4 { animation: waveMove 7s infinite ease-in-out; }
+.line-5 { animation: waveMove 9s infinite ease-in-out; }

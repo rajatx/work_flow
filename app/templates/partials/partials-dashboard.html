@@ -1,0 +1,77 @@
+<div class="max-w-7xl mx-auto px-6 py-10">
+    
+    <!-- Profile Card Section -->
+    <div class="bg-white p-8 rounded-2xl text-center mb-10 shadow-[0_10px_50px_-15px_rgba(0,0,0,0.3)] border border-gray-100 animate-fade-in">
+        <div class="relative w-24 h-24 mx-auto mb-4">
+            <img src="/static/image/TM_Flowem.png" alt="user" class="w-full h-full rounded-full object-cover border-4 border-blue-50 shadow-md" />
+            <div class="absolute bottom-1 right-1 w-5 h-5 bg-green-500 border-2 border-white rounded-full"></div>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800">Rantu Das</h3>
+        <p class="text-blue-600 font-medium text-sm">Finted Organization</p>
+    </div>
+
+    <!-- Dashboard Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        
+        <!-- Card 1: Create Organization -->
+        <div class="group bg-white p-8 rounded-2xl flex flex-col items-center text-center cursor-pointer shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-blue-200 transition-all duration-300 transform hover:-translate-y-2"
+             hx-get="/create-organization" hx-target="#container" hx-push-url="true">
+            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center p-3 mb-5 shadow-lg group-hover:bg-blue-500 transition-colors">
+                <img src="/static/icon/Create.png" alt="org" class="w-full h-full invert brightness-0" />
+            </div>
+            <h4 class="text-lg font-bold text-gray-800 mb-2">Create Organization</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">Perspiciatis quae, lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <!-- Card 2: Settings -->
+        <div class="group bg-white p-8 rounded-2xl flex flex-col items-center text-center cursor-pointer shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-blue-200 transition-all duration-300 transform hover:-translate-y-2"
+             hx-get="/settings" hx-target="#container" hx-push-url="true">
+            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center p-3 mb-5 shadow-lg group-hover:bg-blue-500 transition-colors">
+                <img src="/static/icon/Settings.png" alt="settings" class="w-full h-full invert brightness-0" />
+            </div>
+            <h4 class="text-lg font-bold text-gray-800 mb-2">Settings</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">Perspiciatis quae, lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <!-- Card 3: Users -->
+        <div class="group bg-white p-8 rounded-2xl flex flex-col items-center text-center cursor-pointer shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-blue-200 transition-all duration-300 transform hover:-translate-y-2"
+             hx-get="/users" hx-target="#container" hx-push-url="true">
+            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center p-3 mb-5 shadow-lg group-hover:bg-blue-500 transition-colors">
+                <img src="/static/icon/user-circle.png" alt="users" class="w-full h-full invert brightness-0" />
+            </div>
+            <h4 class="text-lg font-bold text-gray-800 mb-2">Users</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">Perspiciatis quae, lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <!-- Card 4: Reports -->
+        <div class="group bg-white p-8 rounded-2xl flex flex-col items-center text-center cursor-pointer shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-blue-200 transition-all duration-300 transform hover:-translate-y-2"
+             hx-get="/reports" hx-target="#container" hx-push-url="true">
+            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center p-3 mb-5 shadow-lg group-hover:bg-blue-500 transition-colors">
+                <img src="/static/icon/file-report.png" alt="report" class="w-full h-full invert brightness-0" />
+            </div>
+            <h4 class="text-lg font-bold text-gray-800 mb-2">Reports</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">Perspiciatis quae, lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <!-- Card 5: Billing -->
+        <div class="group bg-white p-8 rounded-2xl flex flex-col items-center text-center cursor-pointer shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-blue-200 transition-all duration-300 transform hover:-translate-y-2"
+             hx-get="/billing" hx-target="#container" hx-push-url="true">
+            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center p-3 mb-5 shadow-lg group-hover:bg-blue-500 transition-colors">
+                <img src="/static/icon/Dashboard2.png" alt="bill" class="w-full h-full invert brightness-0" />
+            </div>
+            <h4 class="text-lg font-bold text-gray-800 mb-2">Billing</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">Perspiciatis quae, lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <!-- Card 6: Notifications -->
+        <div class="group bg-white p-8 rounded-2xl flex flex-col items-center text-center cursor-pointer shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-blue-200 transition-all duration-300 transform hover:-translate-y-2"
+             hx-get="/notifications" hx-target="#container" hx-push-url="true">
+            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center p-3 mb-5 shadow-lg group-hover:bg-blue-500 transition-colors">
+                <img src="/static/icon/Notification.png" alt="notif" class="w-full h-full invert brightness-0" />
+            </div>
+            <h4 class="text-lg font-bold text-gray-800 mb-2">Notifications</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">Perspiciatis quae, lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+    </div>
+</div>

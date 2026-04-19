@@ -1,0 +1,234 @@
+<div class="w-full px-10">
+
+<!-- HERO SECTION -->
+
+<section class="flex flex-col md:flex-row items-center justify-between gap-10 pb-10">
+
+<div class="flex-1 text-center md:text-left">
+
+<h1 class="text-4xl leading-tight font-bold">
+Work Management <samp class="text-blue-600 font-serif">and <br> Planning Tools</samp>
+</h1>
+
+<p class="mt-5 text-gray-600">
+Flowem is a visual work management and planning software. We provide the best tools to help you visualize your ideas and collaborate with your team to run a successful project or business.
+</p>
+
+</div>
+
+<div class="flex-1 md:text-right text-center">
+<img src="/static/image-2/Home-1.png" alt="hero" 
+     class="max-w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500">
+</div>
+
+</section>
+
+
+<!-- DISCOVER SECTION -->
+
+<section class="w-full">
+
+<div class="relative w-[80vw] max-w-212.5 aspect-square mx-auto">
+    <svg viewBox="277 190 540 363" class="w-full h-full animate-blob">    
+        <path
+          d="M589.863,556.422c-24.234,-2.293 -47.003,-12.348 -68.829,-23.13c-21.826,-10.779 -43.464,-22.522 -67.035,-28.621c-26.694,-6.907 -54.695,-6.277 -82.037,-9.834c-27.345,-3.557 -55.767,-12.374 -73.57,-33.431c-16.093,-19.031 -21.009,-45.243 -20.805,-70.162c0.191,-23.281 4.895,-47.719 20.04,-65.402c16.236,-18.957 41.84,-27.135 66.591,-30.381c24.751,-3.246 50.031,-2.476 74.432,-7.743c38.973,-8.412 72.877,-31.499 106.473,-52.97c33.596,-21.471 69.578,-42.318 109.339,-45.264c39.762,-2.944 84.033,17.468 95.789,55.565c7.849,25.434 0.183,53.023 3.366,79.446c3.472,28.823 19.544,54.421 36.064,78.292c7.098,10.256 14.45,20.582 18.49,32.383c4.037,11.798 4.337,25.545 -2.288,36.112c-7.151,11.408 -20.921,17.022 -34.265,18.827c-13.343,1.802 -26.923,0.515 -40.335,1.712c-26.612,2.384 -54.575,15.427 -71.823,36.242c-17.98,21.696 -40.603,31.106 -69.599,28.359Z"
+          fill="#cbcbcbff"
+        />
+        </svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-3">
+<span class="py-2.5 px-5.5 rounded-full bg-cyan-200/30 backdrop-blur border border-cyan-400/50 text-sm font-medium cursor-pointer transition hover:translate-y-1 hover:shadow-xl active:scale-95 shadow-lg">
+What do you want to automate? <span class="text-blue-600"><b>See more →</b></span>
+</span>
+<h2 class="text-[clamp(1.3rem,4vw,2.2rem)] font-bold mt-3">
+  Discover <span class="text-purple-600">our offerings</span>
+</h2>
+
+<p class="text-[clamp(0.9rem,3vw,1.1rem)] mt-3">
+Visualize your ideas and collaborate with your team to manage 
+the business operation with Flowem. Sign up now to maximize your 
+productivity with our innovative workflow solutions.
+</p>
+</div>
+</div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="flex flex-col md:flex-row items-center justify-between gap-10 mt-10">
+
+<div class="flex-1">
+
+<h2 class="text-4xl mb-2 md:text-left text-center font-bold">
+  Features
+</h2>
+
+<p class="text-gray-600 mb-10 md:text-left text-center">
+At Flowem, we believe that visual thinking is the key to success in any project.
+</p>
+
+<div class="flex flex-col gap-7">
+
+<div class="flex items-start gap-5">
+
+<img src="/static/icon/loader-dots.png" class="w-9 h-9 bg-gray-300 rounded-xl p-1">
+
+<div>
+<h4 class="text-lg mb-1 font-bold">Plan Visualisation</h4>
+<p class="text-gray-600 leading-relaxed">All-in-One Visual Toolkit, you don't need to hop different tools.</p>
+</div>
+
+</div>
+
+<div class="flex items-start gap-5">
+
+<img src="/static/icon/community.png" class="w-9 h-9 bg-gray-300 rounded-xl p-1">
+
+<div>
+<h4 class="text-lg mb-1 font-bold">Engage Team</h4>
+<p class="text-gray-600 leading-relaxed">It captures your peers attention and helps them quickly get things done.</p>
+</div>
+
+</div>
+
+<div class="flex items-start gap-5">
+
+<img src="/static/icon/heart-circle.png" class="w-9 h-9 bg-gray-300 rounded-xl p-1">
+
+<div>
+<h4 class="text-lg mb-1 font-bold">Time Machine</h4>
+<p class="text-gray-600 leading-relaxed">Saving time is our goal. We are simplifying work-life.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="flex-1 text-center md:text-right">
+<img src="/static/image-2/Home-3.png" alt="hero"
+     class="max-w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500">
+</div>
+
+</section>
+
+
+<!-- FAQ SECTION -->
+
+<section class="flex flex-col md:flex-row items-start justify-between gap-10 mt-30 mb-10">
+
+<div class="flex-1">
+<h2 class="text-3xl mb-2 md:text-left text-center font-bold">Few <span class="text-purple-600">question answered</span></h2>
+<p class="text-gray-600 mb-10 md:text-left text-center">Here are some common questions about our company.</p>
+
+{% for faq in faq_data %}
+<div class="border-b border-blue-300 w-[90%] faq-item" id="faq-{{faq.id}}">
+<div onclick="toggleFAQ('faq-{{faq.id}}')" class="flex justify-between items-center cursor-pointer text-sm group">
+<h4 class="group-hover:text-blue-600 transition font-bold">{{ faq.question }}</h4>
+<span class="transition-transform duration-400 arrow">
+<img src="/static/icon/chevron-down.png">
+</span>
+</div>
+<div class="overflow-hidden h-0 opesity-0 translate-y-1 transition-all duration-400 faq-answer">
+  <p class="mb-5 text-gray-600">
+    {{ faq.answer }}
+  </p>
+</div>
+</div>
+{% endfor %}
+
+<script>
+function toggleFAQ(id) {
+  const faqItem = document.getElementById(id);
+  const allItems = document.querySelectorAll('.faq-item');
+
+  allItems.forEach(item => {
+    const answer = item.querySelector('.faq-answer');
+    const arrow = item.querySelector('.arrow');
+
+    if (item.id === id) {
+      const isOpen = item.classList.contains('active');
+
+      if (isOpen) {
+        // CLOSE
+        answer.style.height = answer.scrollHeight + "px"; // set current height
+        requestAnimationFrame(() => {
+          answer.style.height = "0px";
+          answer.style.opacity = "0";
+        });
+
+        item.classList.remove('active');
+        arrow.style.transform = "rotate(0deg)";
+
+      } else {
+        // OPEN
+        item.classList.add('active');
+
+        answer.style.height = "0px";
+        const fullHeight = answer.scrollHeight;
+
+        requestAnimationFrame(() => {
+          answer.style.height = answer.scrollHeight + "px";
+          answer.style.opacity = "1";
+          arrow.style.transform = "rotate(180deg)";
+        });
+      }
+
+    } else {
+      // CLOSE others
+      const otherAnswer = item.querySelector('.faq-answer');
+      const otherArrow = item.querySelector('.arrow');
+
+      otherAnswer.style.height = otherAnswer.scrollHeight + "px";
+
+      requestAnimationFrame(() => {
+        otherAnswer.style.height = "0px";
+        otherArrow.style.transform = "rotate(0deg)";
+      });
+
+      item.classList.remove('active');
+      otherArrow.style.transform = "rotate(0deg)";
+    }
+  });
+}
+</script>
+
+</div>
+
+<div class="flex-1 flex items-center justify-center md:min-h-105">
+<img src="/static/image-2/Home-4.jpg" 
+     class="max-w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500" />
+</div>
+
+</section>
+
+<!-- CTA SECTION -->
+
+<section class="w-full my-3">
+<div class="relative w-[80vw] max-w-212.5 aspect-square mx-auto">
+<svg viewBox="185 170 650 400" class="w-full h-full">
+        <path id="cta-blob-1" 
+        d="M724.383,366.646c-32.738,-25.21 -44.272,-56.315 -31.897,-86.072c6.217,-14.951 -1.891,-31.184 -24.251,-42.779c-33.443,-17.344 -86.668,-18.003 -121.584,-2l-0.02,-0.01c-49.203,22.487 -115.435,31.97 -179.745,25.786c-0.107,-0.012 -0.257,-0.022 -0.361,-0.032c-22.42,-2.172 -46.451,1.277 -63.754,10.347c-24.455,12.818 -27.299,32.581 -8.659,47.018c28.067,21.792 40.474,48.02 35.103,74.108c-2.958,14.335 6.147,29.22 27.266,40.172c25.976,13.471 63.235,17.435 95.837,11.904c0.277,-0.056 0.533,-0.1 0.787,-0.144c47.123,-7.766 97.959,-6.791 143.846,2.757c0.387,0.066 0.77,0.154 1.132,0.232l0,-0.01c37.97,8.038 83.103,4.02 113.812,-12.076c35.986,-18.865 40.104,-47.976 12.488,-69.2Z"
+        fill = "#b4f1ffff"
+        />
+
+        <path id="cta-blob-2"
+        d="M270.604,399.353c19.796,8.444 45.125,10.778 64.003,20.026c23.631,11.575 32.269,31.276 41.329,49.309c9.057,18.033 22.437,37.481 49.837,45.018c28.866,7.94 62.63,-0.54 87.863,-12.454c25.231,-11.915 46.625,-27.39 74.849,-36.209c30.866,-9.643 66.483,-10.293 100.304,-14.323c33.823,-4.031 69.717,-13.313 84.834,-32.899c16.497,-21.375 1.24,-48.438 -26.883,-64.21c-28.126,-15.771 -66.09,-22.384 -103.145,-26.269c-22.052,-2.312 -46.357,-4.495 -61.155,-15.107c-15.227,-10.921 -15.186,-27.02 -21.992,-40.939c-12.069,-24.682 -49.542,-43.507 -90.229,-45.326c-40.687,-1.817 -81.964,13.491 -99.378,36.856c-9.546,12.806 -12.951,28.07 -29.041,37.901c-10.993,6.717 -26.239,9.753 -41.075,12.055c-14.836,2.301 -30.202,4.166 -43.243,9.202c-42.069,16.242 -21.396,62.649 13.121,77.37Z"
+        fill="#d5d5d5ff"
+        />
+</svg>
+
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-3">
+    <h2 class="text-xl font-bold">Explore our <span class="text-blue-600">various service plans</span></h2>
+        <p class="mt-1">
+          Looking for a place to work? Join our innovative team
+        </p>
+
+</div>
+
+</div>
+</section>
+
+</div>

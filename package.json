@@ -1,0 +1,16 @@
+{
+  "name": "flowem",
+  "version": "1.0.0",
+  "description": "Flowem Project - FastAPI + HTMX",
+  "main": "app/main.py",
+  "scripts": {
+     "build:css": "npx @tailwindcss/cli -i ./app/static/src/input.css -o ./app/static/css/dist/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}

@@ -1,0 +1,48 @@
+<div id="sidebar-overlay" 
+class="fixed inset-0 bg-black/50 z-1100 hidden backdrop-blur-sm transition-opacity duration-300"
+onclick="closeSidebar()"></div>
+
+<!-- Sidebar Container -->
+<div id="sidebar" class="fixed top-0 -left-70 w-70 h-full bg-white shadow-2xl z-1200 transition-all duration-300 ease-in-out overflow-y-auto">
+  
+  <!-- Sidebar Header with Logo and Close Button -->
+  <div class="flex justify-between p-4 border-b border-blue-200">
+    <img src="/static/image/TM_Flowem.png" alt="logo" class="h-6.5 w-auto object-contain" />
+    <button class="text-2xl text-gray-500 hover:text-green-500 transition-colors cursor-pointer"
+    onclick="closeSidebar()">✖</button>
+  </div>
+
+  <nav class="flex flex-col px-2 py-4 gap-2">
+    <a hx-get="/" hx-target="#container" hx-push-url="true" 
+    class="p-3 mb-1 rounded-lg text-gray-700 hover:bg-purple-200 hover:text-purple-600 transition-all cursor-pointer">Home</a>
+    <a hx-get="/dashboard" hx-target="#container" hx-push-url="true"
+    class="p-3 mb-1 rounded-lg text-gray-700 hover:bg-purple-200 hover:text-purple-600 transition-all cursor-pointer">Dashboard</a>
+    <a hx-get="/about" hx-target="#container" hx-push-url="true"
+    class="p-3 mb-1 rounded-lg text-gray-700 hover:bg-purple-200 hover:text-purple-600 transition-all cursor-pointer">About</a>
+    <a hx-get="/users" hx-target="#container" hx-push-url="true"
+    class="p-3 mb-1 rounded-lg text-gray-700 hover:bg-purple-200 hover:text-purple-600 transition-all cursor-pointer">Users</a>
+    <a hx-get="/create-organization" hx-target="#container" hx-push-url="true"
+    class="p-3 mb-1 rounded-lg text-gray-700 hover:bg-purple-200 hover:text-purple-600 transition-all cursor-pointer">Organization</a>
+    <a hx-get="/contact" hx-target="#container" hx-push-url="true"
+    class="p-3 mb-1 rounded-lg text-gray-700 hover:bg-purple-200 hover:text-purple-600 transition-all cursor-pointer">Contacts</a>
+    <a hx-get="/settings" hx-target="#container" hx-push-url="true"
+    class="p-3 mb-1 rounded-lg text-gray-700 hover:bg-purple-200 hover:text-purple-600 transition-all cursor-pointer">Settings</a>
+    <a hx-get="/reports" hx-target="#container" hx-push-url="true"
+    class="p-3 mb-1 rounded-lg text-gray-700 hover:bg-purple-200 hover:text-purple-600 transition-all cursor-pointer">Reports</a>
+    <a hx-get="/appointment" hx-target="#container" hx-push-url="true"
+    class="p-3 mb-1 rounded-lg text-gray-700 hover:bg-purple-200 hover:text-purple-600 transition-all cursor-pointer">Appointment</a>
+    <a hx-get="/blog" hx-target="#container" hx-push-url="true"
+    class="p-3 mb-1 rounded-lg text-gray-700 hover:bg-purple-200 hover:text-purple-600 transition-all cursor-pointer">Blog</a>
+    <a hx-get="/services" hx-target="#container" hx-push-url="true"
+    class="p-3 mb-1 rounded-lg text-gray-700 hover:bg-purple-200 hover:text-purple-600 transition-all cursor-pointer">Services</a>
+
+    <!-- LOGOUT: HTMX -->
+    <button 
+      class="mt-4 p-3 rounded-lg text-red-700 hover:bg-red-200 hover:text-red-600 transition-colors font-semibold text-center cursor-pointer" 
+      hx-get="/logout"
+      hx-target="body" 
+      hx-push-url="/login">
+      Logout
+    </button>
+  </nav>
+</div>

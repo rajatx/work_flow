@@ -1,0 +1,79 @@
+
+<div class="w-full py-10">
+
+  <div class="max-w-7xl mx-auto px-5 mb-10">
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 border-l-8 border-blue-600 pl-4">
+      About Us
+    </h1>
+  </div>
+
+  <!-- Section 1 -->
+  <section class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 px-5 py-10">
+    
+    <div class="flex-1 space-y-6 order-2 md:order-1 text-center md:text-left">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800 leading-tight">
+        Boost your <span class="text-blue-600">productivity</span>
+      </h1>
+
+      <p class="text-gray-600 text-lg leading-relaxed">
+        It's challenging to achieve success without the right tools.
+        Can you picture a chef without their kitchen gadgets?
+      </p>
+
+      <p class="text-gray-600 text-lg leading-relaxed">
+        There's no sorcery involved; it's time to equip yourself with
+        the tools you deserve.
+      </p>
+
+      <!-- Button with HTMX -->
+      <button 
+        class="bg-black text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition-all shadow-lg active:scale-95"
+        hx-get="/services"
+        hx-target="#main-content"
+        hx-push-url="true">
+        Learn More About Our Services
+      </button>
+    </div>
+
+    <div class="flex-1 order-1 md:order-2">
+       <img src="/static/image-2/Home-1.png" alt="About illustration"
+            class="max-w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500" />
+    </div>
+
+  </section>
+
+  <!-- Section 2 -->
+  <section class="max-w-7xl max-auto flex flex-col md:flex-row items-center justify-between gap-10 px-5 py-10">
+
+    <div class="flex-1">
+      <img src="/static/image-2/Home-3.png" alt="Work illustration" 
+           class="max-w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500"/>
+    </div>
+
+    <div class="flex-1 space-y-6 text-center md:text-left">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800 leading-tight">
+        A new <span class="text-purple-600">digital landscape </span>
+      </h1>
+
+      <p class="text-gray-600 text-lg leading-relaxed">
+        Working in the office is fine, but having the freedom to work
+        anywhere without interruptions is even better.
+      </p>
+
+      <p class="text-gray-600 text-lg leading-relaxed">
+        Access what you need, when and where you need it.
+      </p>
+
+      <!-- Button with HTMX -->
+      <button 
+        class="bg-black text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition-all shadow-lg active:scale-95"
+        hx-get="/services"
+        hx-target="#main-content"
+        hx-push-url="true">
+        Learn More About Our Services
+      </button>
+    </div>
+
+  </section>
+
+</div>
