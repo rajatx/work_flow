@@ -1,13 +1,15 @@
 # Python
 __pycache__/
 *.py[cod]
+*.pyc
 venv/
 .env
 
 # Node/Tailwind
 node_modules/
-package-lock.json
-dist/
+#  package-lock.json
+app/static/css/dist/output.css
 
 # Others
 .DS_Store
+Thumbs.db
