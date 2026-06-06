@@ -1,2 +1,3 @@
 ﻿# Workflow Management Project
- TechStack - HTMX, Python, Postgresql, FASTApi
+ TechStack - HTMX, Python, Postgresql, FastApi
+ 
